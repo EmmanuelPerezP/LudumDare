@@ -1,4 +1,4 @@
-import './scene1'
+import GameScene from './scenes/scene1'
 
 var config = {
   type: Phaser.AUTO,
@@ -10,10 +10,9 @@ var config = {
       gravity: { y: 200 }
     }
   },
-  scene: {
-    preload: preload,
-    create: create
-  }
+  scene: [
+    GameScene
+  ]
 };
 
 var game = new Phaser.Game(config);
